@@ -10,13 +10,12 @@ def main():
 
     # Inserindo os valores do exemplo
     valores_exemplo = [10, 20, 40, 30, 50, 60, 70, 80, 90, 95, 15, 5, 7, 12, 18, 25, 35, 45, 55, 65, 75, 85, 92, 98, 99]
-    print(f"\nInserindo os seguintes valores na árvore: {sorted(valores_exemplo)}")
+    print(f"\nInserindo os seguintes valores na árvore: {(valores_exemplo)}")
 
-    for val in sorted(valores_exemplo): # Inserir em ordem facilita a visualização
+    for val in (valores_exemplo): # Inserir em ordem facilita a visualização
         print(f"--- Inserindo {val} ---")
         b_tree.insert(val)
     
-    print("\n--- Estrutura Final da Árvore-B ---")
     b_tree.print_tree_pretty()
 
     print("\n--- Testando a Busca ---")
