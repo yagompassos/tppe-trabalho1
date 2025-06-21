@@ -2,19 +2,22 @@
 
 ## Como rodar
 
-Você precisa ter [python 3](https://www.python.org/downloads/) instalado, e seu gerenciador de pacotes pip. 
+Você precisa ter [python 3](https://www.python.org/downloads/) instalado, e seu gerenciador de pacotes pip.
 
 1. Baixe as dependèncias:
+
 ```bash
 pip install icontract
 ```
 
 2. Rode o arquivo principal:
+
 ```bash
 python main.py
 ```
 
 ## Estrutura de pastas e arquivos:
+
 ```
 b_tree_project/
 ├── b_tree/
