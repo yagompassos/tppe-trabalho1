@@ -57,6 +57,12 @@ Você precisa ter [python 3](https://www.python.org/downloads/) instalado, e seu
 2. **Execute o programa principal:**
 
    ```bash
+   cd avore_b
+   ```
+
+   E então:
+
+   ```bash
    python main.py
    ```
 
