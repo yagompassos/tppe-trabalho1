@@ -1,7 +1,7 @@
 from __future__ import annotations
 from typing import List, Optional
 from icontract import require, ensure, invariant
-from arvore_b.b_tree_node import BTreeNode
+from b_tree_node import BTreeNode
 
 
 @invariant(
