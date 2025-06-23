@@ -1,9 +1,8 @@
-from b_tree import BTree
-
+# from b_tree import BTree
+from arvore_b.b_tree import BTree
 
 def is_sorted(lst):
     return all(lst[i] <= lst[i + 1] for i in range(len(lst) - 1))
-
 
 def test_btree_imagem():
     print("Testando árvore baseada na imagem (t = 3)...")
@@ -38,8 +37,12 @@ def test_btree_imagem():
         98,
         99,
     ]
+
     for v in valores:
         arvore.insert(v)
+
+    if arvore.root:
+        arvore.root.print_tree()
 
 
 if __name__ == "__main__":

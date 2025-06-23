@@ -148,3 +148,21 @@ class BTreeNode:
             child.children += sibling.children
         self.keys.pop(idx)
         self.children.pop(idx + 1)
+
+    def print_tree(self, prefix="", is_left=None):
+        label = ""
+        if is_left is True:
+            label = "Esq "
+        elif is_left is False:
+            label = "Dir "
+        print(f"{prefix}{label}{self.keys}")
+        if self.children:
+            for i, child in enumerate(self.children):
+                if i == 0:
+                    child_label = True
+                elif i == len(self.children) - 1:
+                    child_label = False
+                else:
+                    child_label = None  # Meio
+                connector = "├── " if i < len(self.children) - 1 else "└── "
+                child.print_tree(prefix + connector, child_label)
