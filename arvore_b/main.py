@@ -11,7 +11,6 @@ def test_btree_imagem():
     t = 3
     arvore = BTree(t)
 
-    # 1. Inserção
     valores = [
         40,
         20,
